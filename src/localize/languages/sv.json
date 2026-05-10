@@ -1,0 +1,233 @@
+{
+  "actions": {
+    "abort": "Åtgärd avbruten",
+    "confirmation": "Är du säker på att du vill utföra denna åtgärd"
+  },
+  "common": {
+    "advanced_camera_card": "Avancerat kamerakort",
+    "advanced_camera_card_description": "Ett avancerat kamerakort",
+    "folder": "Mapp",
+    "live": "Live",
+    "no_folder": "Ingen mapp att visa",
+    "no_media": "Ingen media att visa",
+    "recordings": "Inspelningar",
+    "version": "Version"
+  },
+  "config": {
+    "cameras": {
+      "always_error_if_entity_unavailable": "Behandla alltid otillgänglig entitet som fel",
+      "camera_entity": "Kameraentitet",
+      "capabilities": {
+        "capabilities": {
+          "clips": "Klipp",
+          "favorite-events": "Favorithändelser",
+          "favorite-recordings": "Favoritinspelningar",
+          "live": "Live",
+          "menu": "Meny",
+          "ptz": "PTZ",
+          "recordings": "Inspelningar",
+          "seek": "Sökning",
+          "snapshots": "Ögonblicksbilder",
+          "substream": "Underström"
+        },
+        "disable": "Inaktivera",
+        "disable_except": "Inaktivera utom",
+        "editor_label": "Kamerafunktioner"
+      },
+      "cast": {
+        "dashboard": {
+          "dashboard_path": "Sökväg till dashboard",
+          "view_path": "Sökväg till vy"
+        },
+        "editor_label": "Cast-alternativ",
+        "method": "Cast-metod",
+        "methods": {
+          "dashboard": "Dashboard",
+          "standard": "Standard"
+        }
+      },
+      "dependencies": {
+        "all_cameras": "Visa händelser för alla kameror med denna kamera",
+        "cameras": "Visa händelser för specifika kameror med denna kamera",
+        "editor_label": "Beroendealternativ"
+      },
+      "dimensions": {
+        "aspect_ratio": "Statisk bildförhållande",
+        "editor_label": "Kameradimensioner",
+        "layout": {
+          "editor_label": "Kameralayout",
+          "fit": "Layoutanpassning",
+          "fits": {
+            "contain": "Media visas inom ramen med kanter",
+            "cover": "Media expanderas proportionellt för att täcka kortet",
+            "fill": "Media sträcks för att fylla kortet"
+          },
+          "pan": {
+            "x": "Horisontell panorering i procent",
+            "y": "Vertikal panorering i procent"
+          },
+          "position": {
+            "editor_label": "Placering för layouttäckning",
+            "x": "Horisontell placering i procent",
+            "y": "Vertikal placering i procent"
+          },
+          "view_box": {
+            "bottom": "Nedre marginal i procent",
+            "editor_label": "Layoutens visningsruta",
+            "left": "Vänster marginal i procent",
+            "right": "Höger marginal i procent",
+            "top": "Övre marginal i procent"
+          },
+          "zoom": "Zoomfaktor"
+        },
+        "rotation": "Rotation",
+        "rotations": {
+          "0": "Ingen rotation",
+          "90": "90 grader medurs",
+          "180": "180 grader medurs",
+          "270": "270 grader medurs"
+        }
+      },
+      "engines": {
+        "editor_label": "Alternativ för kameramotor"
+      },
+      "frigate": {
+        "camera_name": "Frigate-kameranamnn (autodetekterat från entitet)",
+        "client_id": "Frigate-klient-ID (för >1 Frigate-server)",
+        "editor_label": "Frigate-alternativ",
+        "labels": "Frigate-etiketter/objektfilter",
+        "url": "Frigate-server-URL",
+        "zones": "Frigate-zoner"
+      },
+      "go2rtc": {
+        "editor_label": "go2rtc-alternativ",
+        "modes": {
+          "editor_label": "go2rtc-lägen",
+          "mjpeg": "Motion JPEG (MJPEG)",
+          "mp4": "MPEG-4 (MP4)",
+          "mse": "Media Source Extensions (MSE)",
+          "webrtc": "WebRTC"
+        },
+        "stream": "go2rtc-strömnamn",
+        "url": "go2rtc-URL"
+      },
+      "icon": "Ikon för denna kamera (autodetekterad från entitet)",
+      "id": "Unikt ID för denna kamera i detta kort",
+      "image": {
+        "editor_label": "Bildalternativ",
+        "refresh_seconds": "Antal sekunder innan livebild uppdateras (0=aldrig)",
+        "url": "Bild-URL att använda istället för ögonblicksbild från kameraentitet"
+      },
+      "live_provider": "Livevisningsleverantör för denna kamera",
+      "live_provider_options": {
+        "editor_label": "Alternativ för liveleverantör"
+      },
+      "live_providers": {
+        "auto": "Automatisk",
+        "go2rtc": "go2rtc",
+        "ha": "Home Assistant-videoström (t.ex. HLS, LL-HLS, WebRTC via HA)",
+        "image": "Bild",
+        "jsmpeg": "JSMpeg",
+        "webrtc-card": "WebRTC-kort (t.ex. AlexxIT:s WebRTC-kort)"
+      }
+    }
+  },
+  "display_modes": {
+    "grid": "Visa mediavisare för varje kamera i ett rutnät",
+    "single": "Visa en enda mediavisare"
+  },
+  "editor": {
+    "add_new_camera": "Lägg till ny kamera",
+    "add_new_folder": "Lägg till ny mapp",
+    "button": "Knapp",
+    "camera": "Kamera",
+    "cameras": "Kameror",
+    "cameras_secondary": "Vilka kameror som ska visas på detta kort",
+    "delete": "Ta bort",
+    "dimensions": "Kortdimensioner",
+    "dimensions_secondary": "Kortets dimensioner och formalternativ",
+    "folders": "Mappar",
+    "folders_secondary": "Vilka mappar som ska visas på detta kort",
+    "image": "Bild",
+    "image_secondary": "Alternativ för statisk bildvisning",
+    "live": "Live",
+    "live_secondary": "Alternativ för livekameravy",
+    "media_gallery": "Mediagalleri",
+    "media_gallery_secondary": "Alternativ för mediagalleri",
+    "media_viewer": "Mediavisare",
+    "media_viewer_secondary": "Visare för statisk media (klipp, ögonblicksbilder eller inspelningar)",
+    "menu": "Meny",
+    "menu_secondary": "Alternativ för menyutseende",
+    "move_down": "Flytta ned",
+    "move_up": "Flytta upp",
+    "overrides": "Åsidosättningar är aktiva",
+    "overrides_secondary": "Dynamiska konfigurationsåsidosättningar upptäckta",
+    "performance": "Prestanda",
+    "performance_secondary": "Alternativ för kortprestanda",
+    "profiles": "Konfigurationsprofiler",
+    "profiles_secondary": "Välj förkonfigurerade standarduppsättningar",
+    "remote_control": "Fjärrkontroll",
+    "remote_control_secondary": "Alternativ för fjärrstyrning av kortet",
+    "status_bar": "Statusfält",
+    "status_bar_secondary": "Alternativ för statusfältets utseende",
+    "timeline": "Tidslinje",
+    "timeline_secondary": "Alternativ för händelsetidslinje",
+    "upgrade": "Uppgradera",
+    "upgrade_available": "En automatisk uppgradering av kortkonfigurationen är tillgänglig",
+    "view": "Vy",
+    "view_secondary": "Vad kortet ska visa och hur det ska visas"
+  },
+  "elements": {
+    "ptz": {
+      "down": "Ned",
+      "home": "Hem",
+      "left": "Vänster",
+      "presets": "Förinställningar",
+      "right": "Höger",
+      "up": "Upp",
+      "zoom_in": "Zooma in",
+      "zoom_out": "Zooma ut"
+    }
+  },
+  "error": {
+    "awaiting_folder": "Väntar på att mappen ska laddas",
+    "awaiting_live": "Väntar på att liveströmmen ska laddas ...",
+    "awaiting_media": "Väntar på att media ska laddas",
+    "camera_initialization": "Kamerainitiering misslyckades",
+    "camera_initialization_reolink": "Kunde inte initiera Reolink-kamera",
+    "configuration": "Kontrollera konfiguration",
+    "could_not_render_elements": "Kunde inte rendera bildelement",
+    "could_not_resolve": "Kunde inte lösa media-URL",
+    "diagnostics": "Kortdiagnostik. Kontrollera konfidentiell information innan delning",
+    "download_no_media": "Ingen media att ladda ner",
+    "download_sign_failed": "Kunde inte signera media-URL för nedladdning",
+    "duplicate_camera_id": "Duplicerat kamera-ID för följande kamera, använd parametern 'id' för att unikt identifiera kameror",
+    "duplicate_folder_id": "Duplicerat mapp-ID för följande mapp, använd parametern 'id' för att unikt identifiera mappar",
+    "empty_response": "Tomt svar mottogs från Home Assistant för begäran",
+    "failed_fetch": "Kunde inte hämta URL",
+    "failed_proxy": "Kunde inte proxy via Home Assistant",
+    "failed_response": "Misslyckades att få svar från Home Assistant för begäran",
+    "failed_retain": "Kunde inte behålla händelse",
+    "failed_sign": "Kunde inte signera Home Assistant-URL",
+    "fetching_diagnostics": "Hämtar diagnostik",
+    "image_load_error": "Bilden kunde inte laddas",
+    "invalid_configuration": "Ogiltig konfiguration",
+    "invalid_configuration_no_hint": "Ingen platsinformation tillgänglig (fel eller saknad typ?)",
+    "invalid_configuration_override": "Ogiltig åsidosättningskonfiguration",
+    "invalid_elements_config": "Ogiltig konfiguration för bildelement",
+    "invalid_response": "Ogiltigt svar mottogs från Home Assistant för begäran",
+    "jsmpeg_no_player": "Kunde inte starta JSMPEG-spelare",
+    "live_camera_no_endpoint": "Kunde inte hämta kameraendpoint för denna liveleverantör (ofullständig konfiguration?)",
+    "live_camera_not_found": "Den konfigurerade camera_entity hittades inte",
+    "live_camera_unavailable": "Kamera otillgänglig",
+    "no_camera_engine": "Kunde inte avgöra lämplig motor för kameran",
+    "no_camera_entity": "Kunde inte hitta kameraentitet",
+    "no_camera_entity_for_triggers": "En kameraentitet krävs för att autodetektera triggers",
+    "no_camera_id": "Kunde inte avgöra kamera-ID för följande kamera, kan behöva sätta parametern 'id' manuellt",
+    "no_camera_or_media_for_timeline": "Ingen kamera eller media tillgänglig för tidslinjen",
+    "reconnecting": "Återansluter",
+    "troubleshooting": "Kontrollera felsökning",
+    "unknown": "Okänt fel",
+    "upgrade_available": "En automatisk uppgradering av kortkonfigurationen är tillgänglig, öppna den visuella korteditorn"
+  }
+}
