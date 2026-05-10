@@ -7,7 +7,7 @@
     "advanced_camera_card": "Avancerat kamerakort",
     "advanced_camera_card_description": "Ett avancerat kamerakort",
     "folder": "Mapp",
-    "live": "Live",
+    "live": "Direktsändning",
     "no_folder": "Ingen mapp att visa",
     "no_media": "Ingen media att visa",
     "recordings": "Inspelningar",
@@ -22,7 +22,7 @@
           "clips": "Klipp",
           "favorite-events": "Favorithändelser",
           "favorite-recordings": "Favoritinspelningar",
-          "live": "Live",
+          "live": "Direktsändning",
           "menu": "Meny",
           "ptz": "PTZ",
           "recordings": "Inspelningar",
@@ -36,23 +36,23 @@
       },
       "cast": {
         "dashboard": {
-          "dashboard_path": "Sökväg till dashboard",
+          "dashboard_path": "Sökväg till instrumentpanel",
           "view_path": "Sökväg till vy"
         },
         "editor_label": "Cast-alternativ",
         "method": "Cast-metod",
         "methods": {
-          "dashboard": "Dashboard",
+          "dashboard": "Instrumentpanel",
           "standard": "Standard"
         }
       },
       "dependencies": {
-        "all_cameras": "Visa händelser för alla kameror med denna kamera",
-        "cameras": "Visa händelser för specifika kameror med denna kamera",
+        "all_cameras": "Visa händelser för alla kameror tillsammans med denna kamera",
+        "cameras": "Visa händelser för specifika kameror tillsammans med denna kamera",
         "editor_label": "Beroendealternativ"
       },
       "dimensions": {
-        "aspect_ratio": "Statisk bildförhållande",
+        "aspect_ratio": "Statiskt bildförhållande",
         "editor_label": "Kameradimensioner",
         "layout": {
           "editor_label": "Kameralayout",
@@ -60,14 +60,14 @@
           "fits": {
             "contain": "Media visas inom ramen med kanter",
             "cover": "Media expanderas proportionellt för att täcka kortet",
-            "fill": "Media sträcks för att fylla kortet"
+            "fill": "Media sträcks ut för att fylla kortet"
           },
           "pan": {
             "x": "Horisontell panorering i procent",
             "y": "Vertikal panorering i procent"
           },
           "position": {
-            "editor_label": "Placering för layouttäckning",
+            "editor_label": "Position för layouttäckning",
             "x": "Horisontell placering i procent",
             "y": "Vertikal placering i procent"
           },
@@ -92,8 +92,8 @@
         "editor_label": "Alternativ för kameramotor"
       },
       "frigate": {
-        "camera_name": "Frigate-kameranamnn (autodetekterat från entitet)",
-        "client_id": "Frigate-klient-ID (för >1 Frigate-server)",
+        "camera_name": "Frigate-kameranamn (autodetekterat från entitet)",
+        "client_id": "Frigate-klient-ID (för fler än 1 Frigate-server)",
         "editor_label": "Frigate-alternativ",
         "labels": "Frigate-etiketter/objektfilter",
         "url": "Frigate-server-URL",
@@ -106,7 +106,7 @@
           "mjpeg": "Motion JPEG (MJPEG)",
           "mp4": "MPEG-4 (MP4)",
           "mse": "Media Source Extensions (MSE)",
-          "webrtc": "WebRTC"
+          "webrtc": "Web Real-Time Communication (WebRTC)"
         },
         "stream": "go2rtc-strömnamn",
         "url": "go2rtc-URL"
@@ -118,9 +118,9 @@
         "refresh_seconds": "Antal sekunder innan livebild uppdateras (0=aldrig)",
         "url": "Bild-URL att använda istället för ögonblicksbild från kameraentitet"
       },
-      "live_provider": "Livevisningsleverantör för denna kamera",
+      "live_provider": "Leverantör för direktsänd vy för denna kamera",
       "live_provider_options": {
-        "editor_label": "Alternativ för liveleverantör"
+        "editor_label": "Alternativ för direktsändningsleverantör"
       },
       "live_providers": {
         "auto": "Automatisk",
@@ -129,6 +129,484 @@
         "image": "Bild",
         "jsmpeg": "JSMpeg",
         "webrtc-card": "WebRTC-kort (t.ex. AlexxIT:s WebRTC-kort)"
+      },
+      "motioneye": {
+        "editor_label": "MotionEye-alternativ",
+        "images": {
+          "directory_pattern": "Katalogmönster för bilder",
+          "file_pattern": "Filmönster för bilder"
+        },
+        "movies": {
+          "directory_pattern": "Katalogmönster för filmer",
+          "file_pattern": "Filmönster för filmer"
+        },
+        "url": "MotionEye UI-URL"
+      },
+      "proxy": {
+        "dynamic": "Dynamisk proxyhantering",
+        "editor_label": "Kameraproxyhantering",
+        "live": "Proxyhantering för direktsändning",
+        "media": "Proxyhantering för media",
+        "modes": {
+          "auto": "Proxyhantering automatiskt konfigurerad",
+          "false": "Proxyhantering inaktiverad",
+          "true": "Proxyhantering aktiverad"
+        },
+        "ssl_ciphers": {
+          "auto": "SSL-chiffer automatiskt konfigurerade",
+          "default": "Standard-SSL-chiffer",
+          "editor_label": "SSL-chiffer",
+          "insecure": "Osäkra SSL-chiffer",
+          "intermediate": "Mellanliggande SSL-chiffer",
+          "modern": "Moderna SSL-chiffer"
+        },
+        "ssl_verification": {
+          "auto": "SSL-verifiering automatiskt konfigurerad",
+          "editor_label": "SSL-verifiering",
+          "false": "SSL-verifiering inaktiverad",
+          "true": "SSL-verifiering aktiverad"
+        }
+      },
+      "reolink": {
+        "editor_label": "Reolink-alternativ",
+        "media_resolution": {
+          "editor_label": "Mediaupplösning",
+          "high": "Hög upplösning",
+          "low": "Låg upplösning"
+        },
+        "url": "Reolink UI-URL"
+      },
+      "title": "Titel för denna kamera (autodetekterad från entitet)",
+      "triggers": {
+        "editor_label": "Triggeralternativ",
+        "entities": "Trigger från andra entiteter",
+        "events": {
+          "clips": "Händelser med nya klipp",
+          "editor_label": "Triggerhändelser",
+          "events": "Alla händelser",
+          "snapshots": "Händelser med nya ögonblicksbilder"
+        },
+        "motion": "Trigger genom att autodetektera rörelsesensorn",
+        "occupancy": "Trigger genom att autodetektera närvarosensorn"
+      },
+      "webrtc_card": {
+        "editor_label": "WebRTC-kortalternativ",
+        "entity": "WebRTC-kortets kameraentitet",
+        "url": "WebRTC-kortets kamera-URL"
+      }
+    },
+    "common": {
+      "controls": {
+        "builtin": "Inbyggda videokontroller",
+        "filter": {
+          "editor_label": "Mediafilter",
+          "mode": "Filterläge",
+          "modes": {
+            "left": "Mediafilter i en sidopanel till vänster",
+            "none": "Inget mediafilter",
+            "right": "Mediafilter i en sidopanel till höger"
+          }
+        },
+        "next_previous": {
+          "editor_label": "Nästa och föregående",
+          "size": "Storlek på nästa-/föregående-kontroll i pixlar",
+          "style": "Stil för nästa-/föregående-kontroll",
+          "styles": {
+            "chevrons": "Vinkelpilar",
+            "icons": "Ikoner",
+            "none": "Ingen",
+            "thumbnails": "Miniatyrbilder"
+          }
+        },
+        "thumbnails": {
+          "editor_label": "Miniatyrbilder",
+          "events_media_type": "Om miniatyrbilder för klipp eller ögonblicksbilder ska visas",
+          "events_media_types": {
+            "clips": "Klippminiatyrbilder",
+            "snapshots": "Miniatyrbilder för ögonblicksbilder"
+          },
+          "media_type": "Om miniatyrbilder för händelser eller inspelningar ska visas",
+          "media_types": {
+            "events": "Händelser",
+            "recordings": "Inspelningar"
+          },
+          "mode": "Miniatyrbildsläge",
+          "modes": {
+            "above": "Miniatyrbilder ovanför",
+            "below": "Miniatyrbilder nedanför",
+            "left": "Miniatyrbilder i en sidopanel till vänster",
+            "none": "Inga miniatyrbilder",
+            "right": "Miniatyrbilder i en sidopanel till höger"
+          },
+          "show_details": "Visa detaljer med miniatyrbilder",
+          "show_download_control": "Visa nedladdningskontroll på miniatyrbilder",
+          "show_favorite_control": "Visa favoritkontroll på miniatyrbilder",
+          "show_timeline_control": "Visa tidslinjekontroll på miniatyrbilder",
+          "size": "Miniatyrbildsstorlek i pixlar"
+        },
+        "timeline": {
+          "editor_label": "Mini-tidslinje",
+          "format": {
+            "24h": "Använd 24-timmarsklocka",
+            "editor_label": "Tids- och datumformat"
+          },
+          "mode": "Läge",
+          "modes": {
+            "above": "Ovanför",
+            "below": "Nedanför",
+            "none": "Ingen"
+          },
+          "pan_mode": "Standardläge för panorering",
+          "pan_modes": {
+            "pan": "Panorera",
+            "seek": "Panorering söker i all media",
+            "seek-in-camera": "Panorering söker endast inom vald kamera",
+            "seek-in-media": "Panorering söker endast inom valt mediaobjekt"
+          }
+        },
+        "wheel": "Mushjulet bläddrar i mediakarusellen"
+      },
+      "display": {
+        "editor_label": "Visning",
+        "grid_columns": "Exakt antal rutnätskolumner",
+        "grid_max_columns": "Maximalt antal rutnätskolumner",
+        "grid_selected_position": "Position för vald media i rutnätet",
+        "grid_selected_positions": {
+          "default": "Valt objekt på standardposition",
+          "first": "Valt objekt är först i rutnätet",
+          "last": "Valt objekt är sist i rutnätet"
+        },
+        "grid_selected_width_factor": "Öka bredden på vald media med denna faktor",
+        "mode": "Läge"
+      },
+      "image": {
+        "entity": "Entitet att använda med entitetsläge",
+        "entity_parameters": "Frågeparametrar som läggs till i entitetsbaserade bild-URL:er (t.ex. width=1920&height=1080)",
+        "mode": "Bildläge",
+        "modes": {
+          "camera": "Home Assistant-kameraögonblicksbild från kameraentitet",
+          "entity": "Entitet med attributet entity_picture",
+          "screensaver": "Inbäddad skärmsläckarbild",
+          "url": "Valfri bild angiven via URL"
+        },
+        "refresh_seconds": "Antal sekunder innan uppdatering (0=aldrig)",
+        "url": "Statisk bild-URL"
+      },
+      "media_action_conditions": {
+        "all": "Alla tillfällen",
+        "hidden": "När webbläsare/flik döljs",
+        "microphone_mute": "När mikrofonen tystas",
+        "microphone_unmute": "När mikrofonen slås på igen",
+        "never": "Aldrig",
+        "selected": "Vid val",
+        "unselected": "När val tas bort",
+        "visible": "När webbläsare/flik visas"
+      },
+      "timeline": {
+        "clustering_threshold": "Antalet händelser då de grupperas (0=ingen gruppering)",
+        "events_media_type": "Den händelsemedia som tidslinjen visar",
+        "events_media_types": {
+          "all": "Alla händelsemediatyper",
+          "clips": "Klipp",
+          "snapshots": "Ögonblicksbilder"
+        },
+        "show_recordings": "Visa inspelningar",
+        "style": "Tidslinjestil",
+        "styles": {
+          "ribbon": "Händelser på ett enda band",
+          "stack": "Staplande och grupperade händelser"
+        },
+        "window_seconds": "Standardlängden för tidslinjevyn i sekunder"
+      }
+    },
+    "dimensions": {
+      "aspect_ratio": "Standardbildförhållande (t.ex. '16:9')",
+      "aspect_ratio_mode": "Bildförhållandeläge",
+      "aspect_ratio_modes": {
+        "dynamic": "Bildförhållandet anpassas efter media",
+        "static": "Statiskt bildförhållande",
+        "unconstrained": "Obegränsat bildförhållande"
+      },
+      "height": "Korthöjd i CSS-enheter (t.ex. '500px')"
+    },
+    "folders": {
+      "ha": {
+        "editor_label": "Alternativ för Home Assistant-mediamapp",
+        "path_info": "Ytterligare funktioner för sökvägsmatchning finns i texteditorn",
+        "url": "URL till mediamapp"
+      },
+      "icon": "Ikon för denna mapp",
+      "id": "Unikt ID för denna mapp i detta kort",
+      "title": "Titel för denna mapp",
+      "type": "Mapptyp",
+      "types": {
+        "ha": "Home Assistant-mediamapp"
+      }
+    },
+    "live": {
+      "auto_mute": "Tysta direktsända kameror automatiskt",
+      "auto_pause": "Pausa direktsända kameror automatiskt",
+      "auto_play": "Spela upp direktsända kameror automatiskt",
+      "auto_unmute": "Slå på ljud för direktsända kameror automatiskt",
+      "controls": {
+        "editor_label": "Kontroller för direktsändning",
+        "ptz": {
+          "editor_label": "PTZ",
+          "hide_home": "Dölj hem- och förinställningskontroller",
+          "hide_pan_tilt": "Dölj panorerings- och lutningskontroll",
+          "hide_zoom": "Dölj zoomkontroll",
+          "mode": "Läge",
+          "modes": {
+            "off": "Av",
+            "on": "På"
+          },
+          "orientation": "Orientering",
+          "orientations": {
+            "horizontal": "Horisontell",
+            "vertical": "Vertikal"
+          },
+          "position": "Position",
+          "positions": {
+            "bottom-left": "Nere till vänster",
+            "bottom-right": "Nere till höger",
+            "top-left": "Uppe till vänster",
+            "top-right": "Uppe till höger"
+          }
+        }
+      },
+      "draggable": "Direktsända kameravyer kan dras/svepas",
+      "lazy_load": "Direktsända kameror laddas vid behov",
+      "lazy_unload": "Direktsända kameror avladdas vid behov",
+      "microphone": {
+        "always_connected": "Håll alltid mikrofonen ansluten",
+        "disconnect_seconds": "Sekunder innan mikrofonen kopplas från (0=aldrig)",
+        "editor_label": "Mikrofon",
+        "enabled": "Mikrofon aktiverad",
+        "mute_after_microphone_mute_seconds": "Sekunder efter att mikrofonen tystats innan inkommande ljud tystas"
+      },
+      "preload": "Förladda direktsänd vy i bakgrunden",
+      "show_image_during_load": "Visa stillbild medan direktsändningen laddas",
+      "transition_effect": "Övergångseffekt för direktsänd kamera",
+      "zoomable": "Direktsända kameror kan zoomas/panoreras"
+    },
+    "media_viewer": {
+      "auto_mute": "Tysta media automatiskt",
+      "auto_pause": "Pausa media automatiskt",
+      "auto_play": "Spela upp media automatiskt",
+      "auto_unmute": "Slå på ljud för media automatiskt",
+      "controls": {
+        "editor_label": "Mediavisarkontroller"
+      },
+      "draggable": "Mediavisaren kan dras/svepas",
+      "lazy_load": "Media i mediavisaren laddas vid behov i karusellen",
+      "snapshot_click_plays_clip": "Klick på en ögonblicksbild spelar upp ett relaterat klipp",
+      "transition_effect": "Övergångseffekt för mediavisare",
+      "transition_effects": {
+        "none": "Ingen övergång",
+        "slide": "Bildspelsövergång"
+      },
+      "zoomable": "Mediavisaren kan zoomas/panoreras"
+    },
+    "menu": {
+      "alignment": "Menyjustering",
+      "alignments": {
+        "bottom": "Justerad längst ned",
+        "left": "Justerad till vänster",
+        "right": "Justerad till höger",
+        "top": "Justerad längst upp"
+      },
+      "button_size": "Menyknappens storlek i pixlar",
+      "buttons": {
+        "alignment": "Knappjustering",
+        "alignments": {
+          "matching": "Matchar menyjusteringen",
+          "opposing": "Motsatt menyjusteringen"
+        },
+        "camera_ui": "Kamerans användargränssnitt",
+        "cameras": "Kameror",
+        "clips": "Klipp",
+        "display_mode": "Visningsläge",
+        "download": "Ladda ner",
+        "enabled": "Knapp aktiverad",
+        "expand": "Expandera",
+        "folders": "Mappar",
+        "fullscreen": "Helskärm",
+        "icon": "Ikon",
+        "image": "Bild",
+        "iris": "Iris / Standardvy / Visa meny igen",
+        "live": "Direktsändning",
+        "media_player": "Skicka till mediaspelare",
+        "microphone": "Mikrofon",
+        "mute": "Tysta / slå på ljud",
+        "permanent": "Visa när menyn är dold",
+        "play": "Spela upp / pausa",
+        "priority": "Prioritet",
+        "ptz_controls": "Visa PTZ-kontroller",
+        "ptz_home": "PTZ hem",
+        "recordings": "Inspelningar",
+        "screenshot": "Skärmbild",
+        "snapshots": "Ögonblicksbilder",
+        "substreams": "Underström(mar)",
+        "timeline": "Tidslinje",
+        "type": "Knapptyp",
+        "types": {
+          "momentary": "Momentan",
+          "toggle": "Växla"
+        }
+      },
+      "position": "Menyposition",
+      "positions": {
+        "bottom": "Placerad längst ned",
+        "left": "Placerad till vänster",
+        "right": "Placerad till höger",
+        "top": "Placerad längst upp"
+      },
+      "style": "Menystil",
+      "styles": {
+        "hidden": "Dold meny",
+        "hover": "Meny vid hovring",
+        "hover-card": "Meny vid hovring (över hela kortet)",
+        "none": "Ingen meny",
+        "outside": "Meny utanför",
+        "overlay": "Överlagrad meny"
+      }
+    },
+    "overrides": {
+      "info": "Denna kortkonfiguration har manuellt angivna åsidosättningar som kan åsidosätta värden som visas i den visuella editorn. Använd kodeditorn för att visa/ändra dessa åsidosättningar"
+    },
+    "performance": {
+      "features": {
+        "animated_progress_indicator": "Animerad förloppsindikator",
+        "card_loading_effects": "Kortets laddningseffekter",
+        "card_loading_indicator": "Kortets laddningsindikator",
+        "editor_label": "Funktionsalternativ",
+        "max_simultaneous_engine_requests": "Maximalt antal samtidiga kameramotorförfrågningar",
+        "media_chunk_size": "Mediasegmentstorlek"
+      },
+      "style": {
+        "border_radius": "Rundningar",
+        "box_shadow": "Skuggor",
+        "editor_label": "Stilalternativ"
+      },
+      "warning": "Detta kort är i lågprestandaläge, så standardvärden har ändrats för att optimera prestandan"
+    },
+    "profiles": {
+      "casting": "Casting",
+      "editor_label": "Konfigurationsprofiler",
+      "low-performance": "Låg prestanda",
+      "scrubbing": "Videobläddring"
+    },
+    "remote_control": {
+      "entities": {
+        "camera": "Input Select-entitet för att styra kamera",
+        "editor_label": "Fjärrstyrningsentiteter"
+      }
+    },
+    "status_bar": {
+      "height": "Statusfältets höjd i pixlar",
+      "items": {
+        "enabled": "Objekt aktiverat",
+        "engine": "Kameramotor",
+        "live_provider": "Direktsändningsleverantör",
+        "priority": "Item priority",
+        "resolution": "Upplösning",
+        "technology": "Teknik",
+        "title": "Titel"
+      },
+      "popup_seconds": "Statusfältets popup-sekunder",
+      "position": "Statusfältets position",
+      "positions": {
+        "bottom": "Placerad längst ned",
+        "top": "Placerad längst upp"
+      },
+      "style": "Statusfältets stil",
+      "styles": {
+        "hover": "Statusfält vid hovring",
+        "hover-card": "Statusfält vid hovring (över hela kortet)",
+        "none": "Inget statusfält",
+        "outside": "Statusfält utanför",
+        "overlay": "Överlagrat statusfält",
+        "popup": "Popup-statusfält"
+      }
+    },
+    "view": {
+      "camera_select": "Vy för nyligen valda kameror",
+      "default": "Standardvy",
+      "default_cycle_camera": "Växla mellan kameror när standardvyn uppdateras",
+      "default_reset": {
+        "after_interaction": "Återställ till standardvyn efter att användarinteraktion avslutas",
+        "editor_label": "Återställningsbeteende för standardvy",
+        "entities": "Återställ till standardvyn vid ändring av entitetstillstånd",
+        "every_seconds": "Återställ till standardvy var X:e sekund (0=aldrig)",
+        "interaction_mode": "Hur standardåterställning beter sig när kortet har mänsklig interaktion",
+        "interaction_modes": {
+          "active": "Tillåt återställning endast när kortet har aktiv mänsklig interaktion",
+          "all": "Återställ oavsett mänsklig interaktion",
+          "inactive": "Återställ endast när kortet inte har någon mänsklig interaktion"
+        }
+      },
+      "dim": "Dämpa när ingen interaktion sker",
+      "interaction_seconds": "Sekunder efter användaråtgärd som kortet ska räknas som interagerat (0=aldrig)",
+      "keyboard_shortcuts": {
+        "editor_label": "Kortkommandon",
+        "enabled": "Kortkommandon aktiverade",
+        "ptz_down": "PTZ ned",
+        "ptz_home": "PTZ hem",
+        "ptz_left": "PTZ vänster",
+        "ptz_right": "PTZ höger",
+        "ptz_up": "PTZ upp",
+        "ptz_zoom_in": "PTZ zooma in",
+        "ptz_zoom_out": "PTZ zooma ut"
+      },
+      "theme": {
+        "themes": {
+          "dark": "Mörk",
+          "editor_label": "Teman",
+          "ha": "Home Assistant",
+          "light": "Ljus",
+          "traditional": "Traditionell"
+        }
+      },
+      "triggers": {
+        "actions": {
+          "editor_label": "Triggeråtgärder",
+          "interaction_mode": "Hur åtgärder ska hanteras när kortet har mänsklig interaktion",
+          "interaction_modes": {
+            "active": "Trigga endast åtgärder när kortet har mänsklig interaktion",
+            "all": "Trigga åtgärder oavsett mänsklig interaktion",
+            "inactive": "Trigga endast åtgärder när kortet inte har någon mänsklig interaktion"
+          },
+          "trigger": "Triggeråtgärd",
+          "triggers": {
+            "default": "Ändra till eller uppdatera standardvy",
+            "live": "Ändra till eller uppdatera direktsänd vy",
+            "media": "Ändra till relevant mediavy för ny media",
+            "none": "Ingen åtgärd"
+          },
+          "untrigger": "Avtriggeråtgärd",
+          "untriggers": {
+            "default": "Ändra till standardvy/kamera",
+            "none": "Ingen åtgärd"
+          }
+        },
+        "editor_label": "Triggerbeteende",
+        "filter_selected_camera": "Trigga endast på vald kamera",
+        "show_trigger_status": "Visa pulserande kant vid trigger",
+        "untrigger_seconds": "Sekunder efter ändring till inaktivt tillstånd innan avtrigger"
+      },
+      "views": {
+        "clip": "Senaste klippet",
+        "clips": "Klippgalleri",
+        "current": "Aktuell vy",
+        "folder": "Mappmedia",
+        "folders": "Mappgalleri",
+        "image": "Statisk bild",
+        "live": "Direktsänd vy",
+        "recording": "Senaste inspelningen",
+        "recordings": "Inspelningsgalleri",
+        "snapshot": "Senaste ögonblicksbilden",
+        "snapshots": "Ögonblicksbildsgalleri",
+        "timeline": "Tidslinjevy"
       }
     }
   },
@@ -149,9 +627,9 @@
     "folders": "Mappar",
     "folders_secondary": "Vilka mappar som ska visas på detta kort",
     "image": "Bild",
-    "image_secondary": "Alternativ för statisk bildvisning",
-    "live": "Live",
-    "live_secondary": "Alternativ för livekameravy",
+    "image_secondary": "Alternativ för statisk bildvy",
+    "live": "Direktsändning",
+    "live_secondary": "Alternativ för direktsänd kameravy",
     "media_gallery": "Mediagalleri",
     "media_gallery_secondary": "Alternativ för mediagalleri",
     "media_viewer": "Mediavisare",
@@ -191,43 +669,114 @@
   },
   "error": {
     "awaiting_folder": "Väntar på att mappen ska laddas",
-    "awaiting_live": "Väntar på att liveströmmen ska laddas ...",
+    "awaiting_live": "Väntar på att direktsändningen ska laddas ...",
     "awaiting_media": "Väntar på att media ska laddas",
     "camera_initialization": "Kamerainitiering misslyckades",
     "camera_initialization_reolink": "Kunde inte initiera Reolink-kamera",
     "configuration": "Kontrollera konfiguration",
     "could_not_render_elements": "Kunde inte rendera bildelement",
     "could_not_resolve": "Kunde inte lösa media-URL",
-    "diagnostics": "Kortdiagnostik. Kontrollera konfidentiell information innan delning",
+    "diagnostics": "Kortdiagnostik. Kontrollera om konfidentiell information finns innan delning",
     "download_no_media": "Ingen media att ladda ner",
     "download_sign_failed": "Kunde inte signera media-URL för nedladdning",
-    "duplicate_camera_id": "Duplicerat kamera-ID för följande kamera, använd parametern 'id' för att unikt identifiera kameror",
-    "duplicate_folder_id": "Duplicerat mapp-ID för följande mapp, använd parametern 'id' för att unikt identifiera mappar",
-    "empty_response": "Tomt svar mottogs från Home Assistant för begäran",
+    "duplicate_camera_id": "Duplicerat kamera-ID för följande kamera, använd parametern 'id' för att identifiera kameror unikt",
+    "duplicate_folder_id": "Duplicerat mapp-ID för följande mapp, använd parametern 'id' för att identifiera mappar unikt",
+    "empty_response": "Mottog tomt svar från Home Assistant för begäran",
     "failed_fetch": "Kunde inte hämta URL",
-    "failed_proxy": "Kunde inte proxy via Home Assistant",
-    "failed_response": "Misslyckades att få svar från Home Assistant för begäran",
+    "failed_proxy": "Kunde inte använda proxy via Home Assistant",
+    "failed_response": "Misslyckades med att ta emot svar från Home Assistant för begäran",
     "failed_retain": "Kunde inte behålla händelse",
     "failed_sign": "Kunde inte signera Home Assistant-URL",
     "fetching_diagnostics": "Hämtar diagnostik",
     "image_load_error": "Bilden kunde inte laddas",
     "invalid_configuration": "Ogiltig konfiguration",
-    "invalid_configuration_no_hint": "Ingen platsinformation tillgänglig (fel eller saknad typ?)",
+    "invalid_configuration_no_hint": "Ingen platsledtråd tillgänglig (felaktig eller saknad typ?)",
     "invalid_configuration_override": "Ogiltig åsidosättningskonfiguration",
     "invalid_elements_config": "Ogiltig konfiguration för bildelement",
-    "invalid_response": "Ogiltigt svar mottogs från Home Assistant för begäran",
+    "invalid_response": "Mottog ogiltigt svar från Home Assistant för begäran",
     "jsmpeg_no_player": "Kunde inte starta JSMPEG-spelare",
-    "live_camera_no_endpoint": "Kunde inte hämta kameraendpoint för denna liveleverantör (ofullständig konfiguration?)",
+    "live_camera_no_endpoint": "Kunde inte hämta kameraendpoint för denna direktsändningsleverantör (ofullständig konfiguration?)",
     "live_camera_not_found": "Den konfigurerade camera_entity hittades inte",
     "live_camera_unavailable": "Kamera otillgänglig",
     "no_camera_engine": "Kunde inte avgöra lämplig motor för kameran",
     "no_camera_entity": "Kunde inte hitta kameraentitet",
     "no_camera_entity_for_triggers": "En kameraentitet krävs för att autodetektera triggers",
-    "no_camera_id": "Kunde inte avgöra kamera-ID för följande kamera, kan behöva sätta parametern 'id' manuellt",
+    "no_camera_id": "Kunde inte avgöra kamera-ID för följande kamera, parametern 'id' kan behöva anges manuellt",
     "no_camera_or_media_for_timeline": "Ingen kamera eller media tillgänglig för tidslinjen",
+    "no_dashboard_or_view": "Både parametrarna 'dashboard_path' och 'view_path' krävs för cast-metoden 'dashboard'",
+    "no_live_camera": "Parametern camera_entity måste vara angiven och giltig för denna direktsändningsleverantör",
+    "no_supported_camera": "Den valda kameran eller median stöder inte denna vy",
+    "no_supported_cameras": "Inga kameror stöder denna vy",
     "reconnecting": "Återansluter",
+    "stream_not_loading": "Videoströmmen har ännu inte laddats. Detta kan bero på flera olika orsaker. Om det är konfigurerat (och som standard) uppdateras en bild varje sekund tills strömmen laddas korrekt",
+    "too_many_automations": "För många nästlade automationsanrop, kontrollera om din konfiguration innehåller loopar",
     "troubleshooting": "Kontrollera felsökning",
     "unknown": "Okänt fel",
-    "upgrade_available": "En automatisk uppgradering av kortkonfigurationen är tillgänglig, öppna den visuella korteditorn"
+    "upgrade_available": "En automatisk uppgradering av kortkonfigurationen är tillgänglig, öppna den visuella korteditorn",
+    "webrtc_card_reported_error": "WebRTC-kortet rapporterade ett fel",
+    "webrtc_card_waiting": "Väntar på att WebRTC-kortet ska laddas ..."
+  },
+  "key_assigner": {
+    "assign": "Tilldela",
+    "modifiers": {
+      "alt": "Alt",
+      "ctrl": "Ctrl",
+      "meta": "Meta",
+      "shift": "Shift"
+    },
+    "unassign": "Ta bort tilldelning"
+  },
+  "media_filter": {
+    "all": "Alla",
+    "camera": "Kamera",
+    "favorite": "Favorit",
+    "media_type": "Mediatyp",
+    "media_types": {
+      "clips": "Klipp",
+      "recordings": "Inspelningar",
+      "snapshots": "Ögonblicksbilder"
+    },
+    "not_favorite": "Inte favorit",
+    "select_camera": "Välj kamera...",
+    "select_favorite": "Välj favorit...",
+    "select_media_type": "Välj mediatyp...",
+    "select_tag": "Välj tagg...",
+    "select_what": "Välj vad...",
+    "select_when": "Välj när...",
+    "select_where": "Välj var...",
+    "tag": "Tagg",
+    "what": "Vad",
+    "when": "När",
+    "whens": {
+      "custom": "Anpassad",
+      "past_month": "Senaste månaden",
+      "past_week": "Senaste veckan",
+      "today": "Idag",
+      "yesterday": "Igår"
+    },
+    "where": "Var"
+  },
+  "media_viewer": {
+    "unseekable": "Söktid hittades inte i media"
+  },
+  "thumbnail": {
+    "camera": "Kamera",
+    "download": "Ladda ner media",
+    "duration": "Varaktighet",
+    "events": "Händelser",
+    "in_progress": "Pågår",
+    "no_thumbnail": "Ingen miniatyrbild tillgänglig",
+    "retain_indefinitely": "Media kommer att behållas tills vidare",
+    "score": "Poäng",
+    "seek": "Sök",
+    "start": "Start",
+    "tag": "Tagg",
+    "timeline": "Visa media i tidslinjen",
+    "title": "Titel",
+    "what": "Vad",
+    "where": "Var"
+  },
+  "timeline": {
+    "select_date": "Välj datum"
   }
 }
